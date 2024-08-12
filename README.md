@@ -104,6 +104,9 @@ By default, max length of a request body and a response content is cut to 50000 
 ### REQUEST_LOGGING_HTTP_4XX_LOG_LEVEL
 By default, HTTP status codes between 400 - 499 are logged at ERROR level.  You can set `REQUEST_LOGGING_HTTP_4XX_LOG_LEVEL=logging.WARNING` (etc) to override this.
 If you set `REQUEST_LOGGING_HTTP_4XX_LOG_LEVEL=logging.INFO` they will be logged the same as normal requests.
+### REQUEST_LOGGING_HTTP_5XX_LOG_LEVEL
+By default, HTTP status codes between 500 - 599 are logged at ERROR level.  You can set `REQUEST_LOGGING_HTTP_5XX_LOG_LEVEL=logging.WARNING` (etc) to override this.
+If you set `REQUEST_LOGGING_HTTP_4XX_LOG_LEVEL=logging.INFO` they will be logged the same as normal requests.
 ### REQUEST_LOGGING_SENSITIVE_HEADERS
 The value of the headers defined in this settings will be replaced with `'*****'` to hide the sensitive information while logging. By default it is set as `REQUEST_LOGGING_SENSITIVE_HEADERS = ["HTTP_AUTHORIZATION", "HTTP_PROXY_AUTHORIZATION"]`
 ### DJANGO_REQUEST_LOGGING_LOGGER_NAME
